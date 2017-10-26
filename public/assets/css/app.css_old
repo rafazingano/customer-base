@@ -1,0 +1,156 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  font-size: 14px;
+}
+
+/*
+ * Typography
+ */
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+ /* Placeholders */
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.background-ativado{
+  border-left: 4px solid green;
+
+}
+.background-parcial{
+  border-left: 4px solid yellow;
+
+}
+.background-nao-ativado{
+  border-left: 4px solid red;
+
+}
+.background-aguardando{
+  border-left: 4px solid blue;
+}
+.background-entregue{
+  border-left: 4px solid grey;
+}
+
+table.dataTable {
+    font-size: 14px;
+    }
+
+.list-group-item-success{
+  background: green;
+  color: #fff;
+}
+
+.list-group-item-warning{
+  background: yellow;
+  color: #fff;
+}
+
+.list-group-item-danger{
+  background: red;
+  color: #fff;
+}
+
+.list-group-item-primary{
+  background: blue;
+  color: #fff;
+}
+
+.list-group-item-grey{
+   background: grey;
+  color: #fff;
+}
+
+.bg-dark{
+  background: #909090 !important
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #303030;
+}
+
+.btn-secondary,
+.btn-secondary:hover{
+  background: #000;
+  border-color: transparent;
+}
+
+.btn-primary,
+.btn-primary:hover{
+  background: #800000;
+  border-color: transparent;
+}
+
+.btn-success,
+.btn-success:hover{
+background: #ff0000;
+border-color: transparent;
+}
+
+.page-item.active .page-link {
+    z-index: 2;
+    color: #fff;
+    background-color: #800000;
+    border-color: #800000;
+}
+
+.page-link, .page-link:focus, .page-link:hover {
+    color: #800000
+    }

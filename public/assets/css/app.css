@@ -1,0 +1,255 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  font-size: 14px;
+}
+
+/*
+ * Typography
+ */
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+ /* Placeholders */
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.background-ativado{
+  border-left: 10px solid #03662F;
+
+}
+.background-parcial{
+  border-left: 10px solid yellow;
+
+}
+.background-nao-ativado{
+  border-left: 10px solid #E10800;
+
+}
+.background-recusado{
+  border-left: 10px solid #E10800; 
+
+}
+.background-aguardando{
+  border-left: 10px solid #3C5A9A;
+}
+.background-entregue{
+  border-left: 10px solid grey;
+}
+
+.background-despachado{
+  border-left: 10px solid #F7BC00;
+}
+
+table.dataTable {
+    font-size: 14px;
+    }
+
+.list-group-item-success{
+  border-left: 4px solid #03662F;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.list-group-item-warning{
+  border-left: 4px solid #F7BC00;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.list-group-item-yellow{
+  border-left: 4px solid yellow;
+  background: #f0f0f0;
+  color: #333;
+}
+
+
+.list-group-item-danger{
+  border-left: 4px solid #E10800;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.list-group-item-primary{
+  border-left: 4px solid #3C5A9A;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.list-group-item-grey{
+  border-left: 4px solid grey;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.bg-dark{
+  background: #909090 !important
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #303030;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #606060;
+}
+
+.btn-secondary,
+.btn-secondary:hover{
+  background: #000;
+  border-color: transparent;
+}
+
+.btn-primary,
+.btn-primary:hover{
+  background: #800000;
+  border-color: transparent;
+}
+
+.btn-success,
+.btn-success:hover{
+background: #f0f0f0;
+border-color: transparent;
+color: #333;
+}
+
+.page-item.active .page-link {
+    z-index: 2;
+    color: #333;
+    background-color: #f0f0f0;
+    border-color: #333;
+}
+
+.page-link, .page-link:focus, .page-link:hover {
+    color: #333;
+    }
+
+
+
+    .form-items-add{
+      background: #f0f0f0;
+    padding: 20px;
+    }
+
+
+.blog-index h2.title{
+  position: absolute;
+  top: 210px;
+  margin: 0 0 0 20px;
+  background: #fff;
+  padding: 20px;
+}
+.blog-index article{
+  margin: 20px;
+}
+
+.blog-index p.created{
+      text-align: right;
+}
+ul.pagination{
+
+}
+
+ul.pagination li{
+
+}
+
+ul.pagination li a,
+ul.pagination li span{
+  display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f0f0f0;
+    margin: 2px;
+    font-size: 18px;
+}
+
+.bg-dark{
+  background: #f0f0f0 !important;
+}
+
+.btn-image{
+  background: transparent !important;
+  color: #333 !important;
+  border-radius: 0;
+}
+
+table a,
+table a:hover{
+      color: #212529;
+      text-decoration: none;
+}
+
+.fixed-bottom .col-2{
+  padding: 4px 5px;
+}
+
+label{
+  padding-top: 10px;
+}
+
+.form-row{
+      background: #f0f0f0;
+    padding: 20px;
+        margin-bottom: 20px;
+}
+
+
+.modal-customers .loja-title{
+      padding-top: 8px;
+}
