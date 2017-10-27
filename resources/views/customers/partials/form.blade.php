@@ -15,9 +15,12 @@
 		{!! Form::text('data', isset($customer->data)? $customer->data->format('Y-m-d') : null, ['class' => "form-control datetimepicker", 'placeholder' => "Data"]) !!}
 		{!! Form::label('recebido_por', 'Recebido por', ['class' => '']) !!}
 		{!! Form::text('recebido_por', null, ['class' => "form-control", 'placeholder' => "Recebido por"]) !!}
+		@role(['administrator'])
 		{!! Form::label('kit_id', 'Kit', ['class' => '']) !!}
 		{!! Form::select('kit_id', $kits, null, ['class' => "form-control"])  !!} 
+		@endrole
 		</div>
+		@role(['administrator'])
 	<div class="form-group col-md-4">
 		{!! Form::label('promoter_id', 'Promotor', ['class' => '']) !!}
 		{!! Form::select('promoter_id', $promoters, null, ['class' => "form-control"]) !!} 
@@ -26,6 +29,7 @@
 		{!! Form::label('distancia', 'Distancia', ['class' => '']) !!}
 		{!! Form::text('distancia', null, ['class' => "form-control", 'placeholder' => "Distancia"]) !!} 	
 		</div>
+		@endrole
 	<div class="form-group col-md-4">
 		{!! Form::label('desconformidade', 'Desconformidade', ['class' => '']) !!}
 		{!! Form::textarea('desconformidade', null, ['class' => "form-control", 'placeholder' => "Desconformidade"]) !!}
