@@ -254,3 +254,9 @@ label{
 .modal-customers .loja-title{
       padding-top: 8px;
 }
+
+.navbar-dark .navbar-toggler{
+      border-color: #333;
+    color: #333;
+    background-color: #333;
+}
