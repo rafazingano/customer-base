@@ -21,7 +21,7 @@
             {{ $customer->status->title }} 
             <br>
             <b>Data:</b>
-            {{ $customer->created_at }} 
+            {{ isset($customer->data)? $customer->data->format('Y-m-d') : 'Sem Data' }} 
             <br>
             <b>Recebido por:</b>
             {{ $customer->recebido_por }} 
@@ -113,7 +113,7 @@
       </div>
       <div class="form-group col-md-4">
         <b>Data:</b>
-        {{ isset($customer->data2)? $customer->data2->format('Y-m-d') : 'Sem data' }}
+        {{ isset($customer->concluido_data)? $customer->concluido_data->format('Y-m-d') : 'Sem Data' }}
         </div>
         <div class="form-group col-md-8">
         <b>Feedback:</b>

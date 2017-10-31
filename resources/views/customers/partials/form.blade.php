@@ -85,7 +85,7 @@
 	</div>
 	<div class="form-group col-md-4">
 		{!! Form::label('data_2', 'Data 2', ['class' => '']); !!}
-		{!! Form::text('data_2', isset($customer->data_2)? $customer->data_2->format('Y-m-d') : null, ['class' => "form-control datetimepicker", 'placeholder' => "Data 2"]) !!}
+		{!! Form::text('data_2', isset($customer->concluido_data)? $customer->concluido_data->format('Y-m-d') : null, ['class' => "form-control datetimepicker", 'placeholder' => "Data 2"]) !!}
 		{!! Form::checkbox('concluido', 1) !!}
 		{!! Form::label('concluido', 'Concluido', ['class' => '']); !!}
 	</div>
