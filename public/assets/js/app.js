@@ -16,7 +16,7 @@ $(document).ready(function() {
             "infoFiltered": "(filtered from _MAX_ total records)"
         },
         "aoColumnDefs": [
-          { "sType": "html", "aTargets": [ 0 ] }
+          { "sType": "integer", "aTargets": [ 0 ] }
         ]
     });
 

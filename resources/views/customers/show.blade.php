@@ -21,7 +21,7 @@
             {{ $customer->status->title }} 
             <br>
             <b>Data:</b>
-            {{ isset($customer->data)? $customer->data->format('Y-m-d') : 'Sem Data' }} 
+            {{ isset($customer->data)? $customer->data->format('d/m/Y') : 'Sem Data' }} 
             <br>
             <b>Recebido por:</b>
             {{ $customer->recebido_por }} 
